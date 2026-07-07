@@ -30,7 +30,7 @@ class App extends Component {
 		return (
 			<div>
 				<header className='container-fluid bg-dark'>
-					<h1 className='text-center text-light'>STATE ELEVATION</h1>
+					<h1 className='text-center text-light'>STATE ELEVATION HOOKS</h1>
 				</header>
 				<Container>
 					<Row className='mt-3'>
