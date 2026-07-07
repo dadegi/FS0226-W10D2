@@ -1,0 +1,11 @@
+.selected {
+	border: 2px solid red !important;
+}
+
+.list-group .list-group-item {
+    cursor: pointer;
+}
+
+.list-group .list-group-item:nth-child(even) {
+    background-color: bisque;
+}
