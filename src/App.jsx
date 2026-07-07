@@ -5,6 +5,7 @@ import Table from './assets/components/Table';
 import { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Details from './assets/components/Details';
+import Counter from './assets/components/counter';
 
 // Il componente Table dovrà comunicare il proprio stato al componente Details, che sarà fratello nella gerarchia di App. Per definizione i due componenti fratelli non possono comunicare tra loro, quindi, perché condividano lo stesso stato, devo ELEVARLO, cioè lo devo far gestire al componente padre (App) che lo comunicherà a entrambi tramite props.
 // Il component App deve quindi diventare (per ora) un class component
@@ -30,7 +31,9 @@ class App extends Component {
 		return (
 			<div>
 				<header className='container-fluid bg-dark'>
-					<h1 className='text-center text-light'>STATE ELEVATION HOOKS</h1>
+					<h1 className='text-center text-light'>
+						STATE ELEVATION HOOKS
+					</h1>
 				</header>
 				<Container>
 					<Row className='mt-3'>
@@ -52,6 +55,9 @@ class App extends Component {
 							/>
 						</Col>
 					</Row>
+					<div>
+						<Counter />
+					</div>
 				</Container>
 			</div>
 		);
